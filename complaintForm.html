@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>WDV321 Advanced Javascript - Form Validation Project</title>
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/responsive-grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Javascript and jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script src="js/buttons.js"></script>
+	<script src="js/formValidation.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="topNav" id="myTopNav">
+			<a href="#home">Home</a>
+			<a href="#hospitalsClinics">Hospitals and Clinics</a>
+			<a href="#services">Services</a>
+			<a href="#contactUs">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="openClose()">&#9776;</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>WDV321 Advanced Javascript </h2>
+		</div>
+		<div class="col-12">
+			<h3>Form Validation Project - Complaint Form</h3>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-m-12 col-12">
+			<aside>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repudiandae nemo quaerat dolores? Optio, delectus
+					nemo. Dolores ipsa nisi maxime iure laborum eum culpa velit, assumenda tempore corrupti, aliquid quas!</p>
+			</aside>
+		</div>
+		</div>
+<div class="row">
+		<div class="col-m-12 col-6">
+			<form id="complaintForm" name="complaintForm" method="post">
+				<fieldset>
+					<legend>Please enter the following information in order to process your concerns.</legend>
+					<p>
+						<label for="custFirstName">First name:</label>
+						<span id="custFirstNameError" class="errorMsg"></span>
+						<input type="text" name="custFirstName" id="custFirstName" required>
+						
+					</p>
+					<p>
+						<label for="custLastName">Last name:</label>
+						<span id="custLastNameError" class="errorMsg"></span>
+						<input type="text" name="custLastName" id="custLastName" required>
+						
+					</p>
+					<p>
+						<label for="custPhone">Phone number: </label>
+						<span id="custPhoneError" class="errorMsg"></span>
+						<input type="text" name="custPhone" id="custPhone" maxlength="20">
+						
+					</p>
+					<p>
+						
+						<label for="custEmail">Email: </label>
+						<span id="custEmailError" class="errorMsg"></span>
+						<input type="email" name="custEmail" id="custEmail" required>
+						
+						
+					</p>
+				</fieldset>
+
+				<fieldset>
+						<span id="custProductsError" class="errorMsg"></span>
+					<legend>Please select a group:</legend>
+					<label for="custProducts1">Books</label>
+					<input type="radio" name="custProducts" value="books" id="custProducts1">
+
+					<label for="custProducts2">Movies</label>
+					<input type="radio" name="custProducts" value="movies" id="custProducts2">
+
+					<label for="custProducts3">Computer</label>
+					<input type="radio" name="custProducts" value="computer" id="custProducts3">
+				
+				<label for="custProducts4">Consumer Electronics</label>
+				<input type="radio" name="custProducts" value="electronics" id="custProducts4">
+			</fieldset>
+
+				<fieldset>
+					<legend>Description of problem:</legend>
+					<span id="custComplaintError" class="errorMsg"></span>
+					<label for="custComplaint"></label>
+					<textarea name="custComplaint" id="custComplaint" cols="45" rows="5" maxlength="120" required></textarea>
+
+				</fieldset>
+
+				<p class="submit-buttons">
+					<input type="button" name="button" id="sendForm" value="fileComplaint">
+					<input type="reset" name="button2" id="resetForm" value="reset">
+				</p>
+			</form>
+		</div>
+
+		<div class="col-m-12 col-6">
+			<aside>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repudiandae nemo quaerat dolores? Optio, delectus
+					nemo. Dolores ipsa nisi maxime iure laborum eum culpa velit, assumenda tempore corrupti, aliquid quas!</p>
+			</aside>
+		</div>
+
+	</div>
+
+
+
+<div class="row">
+			<footer>
+					<p><a href="http://www.freepik.com/free-vector/realistic-paper-grain-texture_923291.htm">Designed by Freepik</a></p>
+				</footer>
+</div>
+</div>
+
+
+
+</body>
+
+</html>
